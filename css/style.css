@@ -1,0 +1,308 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.nav-text{
+    font-family:'Bai Jamjuree', sans-serif;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+.nav__logo{
+    width: 10em;
+    height: 5em;
+    border-radius: 5px;
+}
+
+.nav__logo2{
+    width: 6em;
+    height: 3em;
+}
+
+.nav__logo:hover{
+    animation: pulse;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+.header__navbar{
+    background: white;
+}
+
+.nav-contact{
+    display: none;
+}
+
+.header__carousel{
+    margin-top: 50px;
+}
+
+.header__carousel-img{
+    width: 900px;
+    height: 300px;
+    opacity: 80%;
+    filter: grayscale(0.9);
+}
+
+.carousel-caption{
+    top: 150px;
+}
+
+.carousel-button{
+    color: white;
+    font-weight: bold;
+    padding: 15px;   
+    margin-top: 20px;
+}
+
+.carousel-title{
+    font-size: 1em;
+    text-shadow: 2px 2px 2px black;
+}
+
+.carousel-text{
+    font-size: .7em;
+    text-shadow: 2px 2px 2px blue;
+}
+
+.services{
+   background: rgb(255, 187, 0);  
+   
+}
+.services-card{
+    margin: auto;
+    margin-top: 1em;
+    transform-style: preserve-3d;
+}
+
+.services-card:hover{
+    animation: pulse;
+    animation-duration: 1s;
+    animation-iteration-count:inherit;
+    box-shadow: 0px 0px 10px rgb(98, 96, 119), 0px 0px 30px rgb(107, 51, 85), 0px 0px 30px rgb(245, 243, 244);
+}
+
+.dropdown {
+    display: none;
+    display: inline-block;
+    font-size:.9em;
+}
+
+.dropdown-content {
+    display: none;
+    min-width: 160px;
+}
+
+.services-card:hover .dropdown .dropdown-content {
+    display: initial;
+}
+
+.services-ico{
+    margin-left: 1em;
+    margin-top:1em;
+    margin-bottom: 1em;
+    width: 5em;
+    height: 5em;
+}
+
+.nosotros-title{
+    margin-top: 1em;
+    margin-bottom: 1.5em;
+}
+
+.nosotros-mision-vision{
+    background:rgb(235, 232, 232);
+}
+
+.nosotros-mision-vision-title{
+    font-size: 2em;
+    margin-top: 1em;
+    font-weight: bold;
+}
+
+.nosotros-mision-vision-content{
+    margin-top: 4em;
+    text-align: justify;
+}
+
+.mision-vision-footer{
+    margin-top: 4em;
+    color: white;
+    height: 8em;
+    background: black;
+    text-align: center;
+    padding-top: .5em;
+}
+
+.mision-vision-ico{
+    width: 2em;
+    height: 2em;
+    background: lightgray;
+    border-radius: 50px;
+}
+
+.nosotros-logo{
+    width: 18em;
+    height: 7em;
+    border-radius: 10px;
+    filter: grayscale(1);
+}
+
+.tamano{
+    width:fit-content;
+    height: auto;
+}
+/* Formulario de contacto */
+
+.contact{
+    box-shadow: 4px 2px 2px black;
+    margin-bottom: 2em;
+}
+
+.contact_icon{
+    font-size: 3em;
+}
+
+.contact_info{
+    margin: 0;
+    justify-content: center;
+    margin-left: 2em;
+    background: rgb(255, 187, 0);
+    padding-bottom: 2em;
+}
+
+.contact_info .info_title{
+    color: rgb(43, 40, 40);
+    text-align: center;
+    margin: 0 auto;
+}
+
+.info_items{
+    margin-top: 5em;
+    font-size: 1em;
+    color:rgba(96, 99, 97, 0.616);
+    text-align: center;
+}
+
+.user_info{
+    color: rgba(96, 99, 97, 0.616);
+    font-size: 1em;
+    text-align: initial;
+}
+
+.contact_form{
+    margin-left: 1em;
+}
+
+@media (min-width: 760px){
+
+    .nav-text{
+        font-size: 1.2em;
+        border-top: .2em solid rgb(255, 187, 0); 
+    }
+    .nav-text:hover{
+        animation: heartBeat;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+    }
+ 
+    .nav-contact{
+        font-size: .7em;
+        display: initial;
+    }
+
+    .header__carousel-img{
+        height: 500px;
+    }
+    
+    .carousel-caption-button{
+        display: initial;
+    }
+    .carousel-title{
+        font-size: 2em;
+        text-shadow: 2px 2px 2px black;
+    }
+    
+    .carousel-text{
+        font-size: 1.5em;
+        text-shadow: 2px 2px 2px blue;
+    }
+
+    .services-card{
+        margin: 1em auto;
+    }
+
+    .nosotros-mision-vision-title{
+        font-size: 2.5em;
+        justify-content: center;
+    }
+
+   .nosotros-mision-vision-align{
+       display: flex;
+   }
+
+   .mision-vision-footer{
+        margin-top: 6.1em;
+        font-size: 1.5em;
+    }
+
+    .mision-vision-ico{
+        width: 2em;
+        height: 2em;
+        background: lightgray;
+        border-radius: 20px;
+    }
+}
+
+
+@media (min-width: 980px){
+
+    .nav-contact{
+        font-size: 1em;
+    }
+
+    .nosotros-content{
+        font-size: 1.2em;
+    }
+
+    .carousel-text{
+        font-size: 1.7em;
+    }
+
+    .nosotros-mision-vision-title{
+        font-size: 2.5em;
+        justify-content: center;
+    }
+
+    .nosotros-mision-vision-content{
+        font-size: 1em;
+    }
+
+    .mision-vision-footer{
+        margin-top: 6.1em;
+        height: 4em;
+        font-size: 2em;
+        padding-top: .6em;
+    }
+
+    .mision-vision-ico{
+        margin-left: 2em;
+        width: 1.5em;
+        height: 1.5em;
+        background: lightgray;
+        border-radius: 20px;
+    }
+
+    .nosotros-logo{
+        width: 18em;
+        height: 3em;
+        border-radius: 10px;
+        filter: grayscale(1);
+    }
+
+    .contact_form{
+        margin-left: 9em;
+    }
+
+}
